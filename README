@@ -1,0 +1,54 @@
+shir_brosh
+316124767
+Shir Brosh
+
+I discussed the exercise with: Gadi Fleischer, Daniel Shookroun.
+
+=============================
+=  README for ex8:   =
+=============================
+Part 1- solving sudoku game.
+Part 2- solving the problem k_subset in 3 different variation.
+
+==================
+=  Description: =
+==================
+Part 1:
+the first 4 function: check_row, check_column, check_square, is_empty, checks if a num can be
+    placed in the given cell, the function illegal_placement operates this functions into 1 function
+    that returns True or False whether the placement of the number is legal or not.
+fill_sudoku_col- A function that fills the sudoku board using recursion, it receives a
+    number and a game board and fills the number according to the game rules
+    moving threw columns and rows.
+solve_sudoku_help- A function that operates the function- 'fill_sudoku_col' each time on a
+    different number using recursion.
+solve_sudoku- A function that receives a sudoku board and solves the game, if the game
+    can be solved it will return True otherwise it will return False
+
+Part 2:
+In all the questions i used the function- bad_input - A function that checks the inputs and returns a
+result suitable according to the demands.
+
+Question 1-
+    print_k_subsets- A function that receives 2 numbers- n,k and prints all the subsets from
+    0 to n-1 by length k.
+    I used the functions:
+        k_subset_helper- A function that receives a list, and 3 numbers-k, index, picked, and
+        recursively go through the numbers and operates the function print_set
+        print_set- A function that receives a list filled with True and False and prints a
+        list of all the indexes that had a True value
+Question 2-
+    fill_k_subsets- A function that receives 2 numbers- n,k and fills a list with all the
+    subsets from 0 to n-1 by length k.
+    I used the functions:
+        k_subset_helper_lst- A function that receives 2 lists- cur_set and lst, and 3 numbers-k,
+        index, picked, and recursively go through the numbers and operates the
+        function print_set
+        print_set_lst- A function that receives a list filled with True and False and another
+        list and adds to the list lists of all the indexes that had a True value
+Question 3:
+    return_k_subsets- A function that receives 2 numbers- n,k and returns a list with all the
+    subsets from 0 to n-1 by length k.
+    I used the function:
+        k_subset_helper_return- A function that builds sub lists in recursion and returns a list
+        of all sub lists.
